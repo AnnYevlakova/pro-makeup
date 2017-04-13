@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ann Yevlakova</title>
+    <link rel="stylesheet"  href='css/style.css'> 
+    <link rel="stylesheet"  href='css/styleForIndex.css'>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src='js/script.js'></script>
+    <script src='js/scriptForIndex.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <script src='js/jquery.maskedinput.min.js'></script>
+    
+    <script>
+        jQuery(function($){
+            jQuery.noConflict();
+   $(".phone").mask("8(999)999-99-99");
+        });
+    </script>
+
+    
+</head>
+    
+<body>
+    <section class='colomn-menu hidden'>
+        <nav class="menu">
+            <li class='menu-portfolio'><a href='portfolio.html'>portfolio</a></li>
+            <li class="menu-aboutMe"><a href='aboutMe.html'>about me</a></li>
+            <li class="menu-blog"><a href='blog.html'>blog</a></li>
+            <li class="menu-contacts"><a href='contact.html'>contacts</a></li>
+        </nav>
+        <footer class='icons'>
+            <a target="_blank" href="https://www.facebook.com/anna.yevlakova"><img class="icon" src="img/fb-icon.png"  class='icons-fb-img'></a>
+            <a target="_blank" href="https://www.instagram.com/ann_yevlakova/"><img class="icon"  src="img/ig-icon.png"  class='icons-ig-img'></a> 
+            <div class="icon-mail"  data-hint ="email is copied">✉</div>
+            <a  target="_blank" href="https://vk.com/id250747600"><img class="icon" src="img/VK-icon.png"  class='icons-vk-img'></a>
+        </footer>
+    </section>
+    
+    
+    
+    <main class='colomn-body'>
+        <header class='body-header'>
+            <div class="menu-buttons" >
+                <div class='open-menu'>
+                <svg class='open-menu' width='15px' height='15px'>
+                    <line id='open1' x1='0' y1='2' x2='15' y2='2' stroke='#690930' stroke-width='2'/>
+                    <line id='open2' x1='0' y1='7.5' x2='15' y2='7.5' stroke='#690930' stroke-width='2'/>
+                    <line id='open3' x1='0' y1='13' x2='15' y2='13' stroke='#690930' stroke-width='2'/>
+                </svg>
+                </div>
+                <div class='close-menu'>
+                <svg class='close-menu hidden' width='15px' height='15px'>
+                    <line id='close1' x1='0' y1='0' x2='15' y2='15' stroke='#690930' stroke-width='2'/>
+                    <line id='close2' x1='0' y1='15' x2='15' y2='0' stroke='#690930' stroke-width='2'/>
+                </svg>
+                </div>
+            </div>
+            <div class='body-header-name'>
+                <div class="name"><a href='index.html'>Ann Yevlakova</a></div>
+                <div class="profession"><a href='index.html'>makeup artist</a></div>
+            </div>
+        </header>
+    <section class='contacts'>
+        <div class='contact-data'>
+                <div class="contactinfo">
+            <p>+375(44)7270181</p>
+            <p>Beauty salon 'Melissa'<br/>
+            Minsk, Pritytskogo squere, 27</p>
+            <div class='icons'>
+                <a target="_blank" href="https://www.facebook.com/anna.yevlakova"><img class="icon icons-fb-img" src='content-img/black/black-fb-icon.png'></a>
+                <a target="_blank" href="https://www.instagram.com/ann_yevlakova/"><img class="icon icons-ig-img"  src='content-img/black/black-ig-icon.png'></a> 
+                <a  target="_blank" href="https://vk.com/id250747600"><img class="icon icons-vk-img" src='content-img/black/black-vk-icon.png'></a>
+                <div class=" icon icon-mail" data-value='ann.yevlakova@gmail.com' data-hint ="email is copied">✉</div>
+            </div>
+        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.3465447650537!2d27.482248850553706!3d53.90781758000283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc549ebacb897%3A0xfe7539c533b1bde2!2z0YPQuy4g0J_RgNC40YLRi9GG0LrQvtCz0L4gMjksINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1471802389100" width="100%" height="70%" frameborder="0" style="border:0; margin-top: 1%;"  allowfullscreen></iframe>
+        </div>
+        <forma id='forma' method='post' name='forma' onsubmit='return false;'>
+            <input class='input name valid' type="text" placeholder="name" name="user">
+            <input class='input phone valid' type="text" placeholder='* 8(029)999-99-99' name="phone">
+            <input pattern="/.+@.+\..+/i" class='input email valid' type="text" placeholder="* email" name="email">
+            <textarea class='input message valid' cols="30" placeholder="message" name="message"></textarea>
+            <input class='input button' type="button" name='show' value="show whole letter">
+            <input class='input submit hidden' name="send" type="submit"  id='submit' value="send">
+            <input class='input correct hidden' name="correct" type="button" value="correct message">
+        </forma>
+    </section>
+    </main>
+       
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+ </body>
+</html>
